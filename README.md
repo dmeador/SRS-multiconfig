@@ -1,4 +1,6 @@
 # SRS-multiconfig
+
+## Purpose
 A simple config tool which helps manage multiple configs for SimpleRadioStandalone (SRS).
 The intent is to prevent having multiple installs of SRS on the same machine and also provide a simple way to swap different configurations.
 
@@ -8,3 +10,57 @@ It is intended that you create a shortcut with running the configtool.cmd and th
 
 Run configtool.cmd within the same directory as the installed SR-ClientRadio.exe installation.
 
+## Manual Installation & Setup
+
+Obtain the ConfigTool.cmd file from github, and place it in your SRS install directory.
+For example (replace username with your-user-name):
+C:\Users\username\DCS\DCS-SRS\DCS-SimpleRadio-Standalone
+
+Open a command prompt
+
+{Windows-Key}+R
+
+In the edit window, 
+Type: "cmd" and then click "OK".
+ 
+At the command prompt:
+```
+cd "C:\Users\username\DCS\DCS-SRS\DCS-SimpleRadio-Standalone"
+```
+
+Configure SRS as desired via SR-RadioClient.exe program "Settings" interface (for example A10 configuration).  Once configuration is completed, save config, and exit SRS.
+
+Remove any existing config files:
+```
+del client.cfg.A10
+ConfigTool.cmd A10
+  file "client.cfg.A10" does not exist
+  "Do you want to create configfile "A10"?
+  Type [Y/n]: Y
+```
+
+Configure SRS as desired via SR-RadioClient.exe program "Settings" interface (for example F16 configuration).  Once configuration is completed, save config, and exit SRS.
+
+Remove any existing config files:
+```
+del client.cfg.F16
+ConfigTool.cmd F16
+  file "client.cfg.F16" does not exist
+  "Do you want to create configfile "F16"?
+  Type [Y/n]: Y
+```
+
+## Normal Operation
+Either manually or via a shortcut, perform the following commands:
+When desiring to launch SRS with saved F16 configuration, execute cmd or shortcut ->
+```
+ConfigTool.cmd F16
+```
+When desiring to launch SRS with saved A10 configuration, execute cmd or shortcut ->
+```
+ConfigTool.cmd A10
+```
+
+## Final Step
+Enjoy all the time saved by using the simple and easy configtool, and drink a toast to David, aka Stryker.
+ 
