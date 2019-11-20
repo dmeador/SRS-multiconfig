@@ -30,7 +30,7 @@ cd "C:\Users\username\DCS\DCS-SRS\DCS-SimpleRadio-Standalone"
 
 Configure SRS as desired via SR-RadioClient.exe program "Settings" interface (for example A10 configuration).  Once configuration is completed, save config, and exit SRS.
 
-Remove any existing config files:
+Remove any existing config files, and run configtool to save the current config to a file:
 ```
 del client.cfg.A10
 ConfigTool.cmd A10
@@ -41,7 +41,7 @@ ConfigTool.cmd A10
 
 Configure SRS as desired via SR-RadioClient.exe program "Settings" interface (for example F16 configuration).  Once configuration is completed, save config, and exit SRS.
 
-Remove any existing config files:
+Remove any existing config files, and run configtool to save the current config to a file:
 ```
 del client.cfg.F16
 ConfigTool.cmd F16
