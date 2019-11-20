@@ -35,7 +35,7 @@ Remove any existing config files:
 del client.cfg.A10
 ConfigTool.cmd A10
   file "client.cfg.A10" does not exist
-  "Do you want to create configfile "A10"?
+  Do you want to create configfile "A10"?
   Type [Y/n]: Y
 ```
 
@@ -46,7 +46,7 @@ Remove any existing config files:
 del client.cfg.F16
 ConfigTool.cmd F16
   file "client.cfg.F16" does not exist
-  "Do you want to create configfile "F16"?
+  Do you want to create configfile "F16"?
   Type [Y/n]: Y
 ```
 
