@@ -13,7 +13,7 @@ Run configtool.cmd within the same directory as the installed SR-ClientRadio.exe
 ## Manual Installation & Setup
 
 Obtain the ConfigTool.cmd file from github [right-click link, and select "save link as..."] (https://raw.githubusercontent.com/dmeador/SRS-multiconfig/master/ConfigTool.cmd), and place it in your SRS install directory.
-For example (replace username with your-user-name):
+For example (replace username with your-user-name), and change path to your SRS install directory:
 C:\Users\username\DCS\DCS-SRS\DCS-SimpleRadio-Standalone
 
 Open a command prompt
