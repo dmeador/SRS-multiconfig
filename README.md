@@ -1,7 +1,7 @@
 # SRS-multiconfig
 
 ## OBSOLETE - 
-With the SR-RadioClient.exe command-line parameter -cfg='xyz.cfg', you can specify different scripts and launch from a windows shortcut.
+With the SR-RadioClient.exe command-line parameter -cfg='xyz.cfg', you can specify different scripts and launch from a windows shortcut without need for this multiconfig wrapper script.
 
 ## Purpose
 A simple config tool which helps manage multiple configs for SimpleRadioStandalone (SRS).
